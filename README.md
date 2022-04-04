@@ -5,6 +5,8 @@
 
 This is a mock portfolio designed to display my current and future projects that I will create throughout my coding bootcamp. Not all projects currently exist but the page is fully functional!
 
+[Link to deployed application](https://millerchase.github.io/portfolio/)
+
 ## Mad With:
 
 - HTML
