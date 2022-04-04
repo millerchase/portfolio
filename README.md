@@ -8,7 +8,7 @@
 - CSS
 
 ## Screen Shots
-
+![portfolio mockup](/assets/images/portfolio-mockup.gif)
 ## Sources
 * led image provided by: https://www.dreamstime.com/
 * calculator image provided by: https://www.shutterstock.com/

@@ -1,6 +1,357 @@
+:root {
+    --primary-color: #52504d;
+    --secondary-color: #89ccc3;
+    --tertiary-color: #4e5d9c;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {  
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--tertiary-color);
+}
+
+header {
+    padding: 0.5rem 0;
+    background: #52504d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+header h1 {
+    width: 98%;
+    padding: 1rem 0;
+    background-color: var(--secondary-color);
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-color);
+    letter-spacing: .08em;
+    font-size: 2.3em;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header nav ul li {
+    justify-content: space-between;
+    margin: .3rem;
+}
+
+header nav ul li a {
+    padding: 0 10px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-bottom: var(--secondary-color) solid;
+    font-size: 1rem;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+    border-bottom: #fff solid;
+}
+
+.hero {
+    height: 40vw;
+    background-image: url(../images/hero-img.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.hero img {
+    width: 35vw;
+    margin-bottom: 0.5rem;;
+}
+
+.hero h3 {
+    margin-bottom: 1rem;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 15px;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    border-bottom: solid var(--primary-color) 0.2rem;
+    color: var(--tertiary-color);
+    font-size: 3rem;
+    width: 90%;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    margin: 8vw auto 3vw auto;
+}
+
+.section-content {
+    width: 90%;
+    text-align: center;
+}
+
+.intro p {
+    margin: 0.5em auto;
+    font-size: 1.1rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin: 1rem 0;
+    background-position: center;
+    background-size: cover;
+    height: 30vw;
+    border: solid var(--secondary-color);
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0.75rem;
+    height: 17vw;
+    background: var(--secondary-color);
+    margin-bottom: 1rem;
+    color: black;
+    justify-content: space-around;
+}
+
+.project-content h4 {
+    font-size: 1.8rem;
+}
+
+.project-content p {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.projects a {
+    text-decoration: none;
+}
+
+/* All attempts at first selctors targeted all projects... */
+/* .projects a:first>*:first-child{
+    height: 90vw;
+} */
+
+.first {
+    height: 70vw;
+}
+
+#surf-report {
+    background-image: url(../images/waves.png);
+}
+
+#led-wall {
+    background-image: url(../images/led-wall.jpg);
+}
+
+#calculator {
+    background-image: url(../images/calculator.png);
+}
+
+#puzzels {
+    background-image: url(../images/puzzle.png);
+}
+
+#run-buddy {
+    background-image: url(../images/run-buddy.png);
+}
+
+.bg-image {
+    filter:brightness(75%);
+    -webkit-filter: blur(75%);
+}
+
+.bg-image:hover {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    font-size: 1rem;
+    justify-content: space-around;
+}
+
+.info {
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid var(--tertiary-color);
+    margin: 0.5rem;
+    padding: 0.1rem 0.3rem;
+}
+
+.info:hover {
+    color: var(--secondary-color);
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        width: auto;
+        padding-left: 5vw;
+        font-size: 2.5rem;
+        text-align: right;
+        padding-right: 0.5rem;
+    }
+
+    header nav ul li a {
+        font-size: 1.3rem;
+    }
+
+    .hero {
+        height: 35vh;
+    }
+
+    .hero img {
+        height: auto;
+        width: auto;
+    }
+
+    .hero h3 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1.5rem;
+    }
+
+    .contact-info {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 820px) {
+
+    section {
+        flex-direction: row;
+        margin-top: 3vh;
+    }
+
+    .section-title {
+        border-bottom: none;
+        flex: 23%;
+        text-align: right;
+        margin: auto;
+        margin-top: 1vw;
+        margin-right: 1vw;
+    }
+
+    .section-content {
+        border-left: solid var(--primary-color) 0.2rem;
+        flex: 77%;
+        padding: 0 1.5vw;
+    }
+
+    .projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .project {
+        width: 33vw;
+        height: 20vh;
+    }
+
+    .project-content {
+        justify-content: center;
+        height: 12vh;
+        padding: 0 1vw;
+    }
+
+    .first {
+        width: 67vw;
+        height: 40vh;
+    }
+
+}
+
+@media screen and (min-width: 1005px) {
+    
+    header nav ul li {
+        margin: 0 1vw 0 3vw;
+        
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .hero {
+        justify-content: space-between;
+    }
+
+    .hero img {
+        margin: 0 0 5vh 5vw;
+    }
+
+    .hero h3 {
+        margin: 0 5vw 5vh 0;
+    }
+
+    .section-title {
+        flex: 18%;
+    }
+
+    .section-content {
+        flex: 82%;
+    }
+
+    .intro p {
+        line-height: 2rem;
+        font-size: 1.7rem;
+    }
+
+    .projects {
+        justify-content: flex-start;
+        padding-left: 3vw;
+    }
+
+    .project {
+        margin: 1vw 1vw 0 0;
+        height: auto;
+        width: 36vw;
+    }
+
+    .project-content {
+        height: 10vh;
+        margin-top: 5vh;
+    }
+
+    .first {
+        width: 73vw;
+        height: 50vh;
+    }
+    
+}

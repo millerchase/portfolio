@@ -12,7 +12,7 @@
 <body>
 
     <!-- header and nav section -->
-    <header>
+    <header class="primary-bg">
         <h1>Lernantino</h1>
         <nav>
             <ul>
@@ -25,71 +25,100 @@
     </header>
 
     <!-- hero section  -->
-    <section class="hero">
+    <div class="hero">
+        <img src="./assets/images/AvatarMaker.png" alt="">
         <h3>Cool Subtitle here!</h3>
-    </section>
+    </div>
 
     <!-- about me section -->
     <section id="about-me">
-        <h2>About me</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quae quas, explicabo molestiae incidunt minus esse? Numquam
-            deleniti tempore porro aliquid incidunt neque, officiis, dolorem
-            molestiae facere quidem nemo unde nihil!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Fuga cumque sequi minima eligendi voluptas, aut animi corrupti
-            quisquam maxime odio placeat et alias culpa maiores itaque
-            provident ipsum laborum id?
-        </p>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-content intro">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quae quas, explicabo molestiae incidunt minus esse? Numquam
+                deleniti tempore porro aliquid incidunt neque, officiis, dolorem
+                molestiae facere quidem nemo unde nihil!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Fuga cumque sequi minima eligendi voluptas, aut animi corrupti
+                quisquam maxime odio placeat et alias culpa maiores itaque
+                provident ipsum laborum id?
+            </p>
+        </div>
     </section>
 
     <!-- work section -->
-    <section id="work">
-        <h2>Work</h2>
+    <section id="work" class="primary-bg">
+        <h2 class="section-title">Work</h2>
 
-        <!-- list of work -->
-        <ul class="projects">
-            <li class="project">
-                <h4>Surf Report</h4>
-                <p>MERN Stack</p>
-                <a href="#"><img src="./assets/images/waves.webp" alt="Surf report project"></a>
-            </li>
-            <li class="project">
-                <h4>LED Wall</h4>
-                <p>Node/IoT</p>
-                <a href="#"><img src="./assets/images/led-wall.jpg" alt="LED Wall project"></a>
-            </li>
-            <li class="project">
-                <h4>Calculator</h4>
-                <p>HTML/JavaScript/CSS</p>
-                <a href="#"><img src="./assets/images/calculator.webp" alt="Calculator project"></a>
-            </li>
-            <li class="project">
-                <h4>Pastel Puzzels</h4>
-                <p>MERN Stack</p>
-                <a href="#"><img src="./assets/images/puzzle.webp" alt="Pastel Puzzels project"></a>
-            </li>
-            <li class="project">
-                <h4>Run Buddy</h4>
-                <p>HTML/CSS</p>
-                <a href="#"><img src="./assets/images/run-buddy.png" alt="Run Buddy project"></a>
-            </li>
-        </ul>
+        <div class="section-content">
+            <!-- list of work -->
+            <div class="projects">
+                <!-- projects wrapped in a tags -->
+                <a  href="#">
+                    <div class="project first bg-image" id="surf-report">
+                        <!-- <img src="./assets/images/waves.webp" alt="Surf report project"> -->
+                        <div class="project-content">
+                            <h4>Surf Report</h4>
+                            <p>MERN Stack</p>
+                        </div>
+                        
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="project bg-image" id="led-wall">
+                        <!-- <img src="./assets/images/led-wall.jpg" alt="LED Wall project"> -->
+                        <div class="project-content">
+                            <h4>LED Wall</h4>
+                            <p>Node/IoT</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="project bg-image" id="calculator">
+                        <!-- <img src="./assets/images/calculator.webp" alt="Calculator project"> -->
+                        <div class="project-content">
+                            <h4>Calculator</h4>
+                            <p>REACT/JavaScript/CSS</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="project bg-image" id="puzzels">
+                        <!-- <img src="./assets/images/puzzle.webp" alt="Pastel Puzzels project"> -->
+                        <div class="project-content">
+                            <h4>Pastel Puzzels</h4>
+                            <p>MERN Stack</p>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="https://millerchase.github.io/run-buddy/">
+                    <div class="project bg-image" id="run-buddy">
+                        <!-- <img src="./assets/images/run-buddy.png" alt="Run Buddy project"> -->
+                        <div class="project-content">
+                            <h4>Run Buddy</h4>
+                            <p>HTML/CSS</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
 
     </section>
 
     <!-- contact me section -->
     <section id="contact">
-        <h2>Contact Me</h2>
-        <ul class="contact-info">
-            <li><a href="#">555-555-5555</a></li>
-            <li><a href="#">lernantino@website.com</a></li>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Twitter</a></li>
-        </ul>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="section-content">
+            <div class="contact-info">
+                <a class="info" href="tel:555-555-7890">555-555-5555</a>
+                <a class="info" href="mailto: lernantino@website.com">lernantino@website.com</a>
+                <a class="info" target="_blank" href="https://github.com/millerchase">GitHub</a>
+                <a class="info" target="_blank" href="https://twitter.com/?lang=en">Twitter</a>
+            </div>
+        </div>
     </section>
 
 </body>
