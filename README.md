@@ -7,7 +7,7 @@ This is a mock portfolio designed to display my current and future projects that
 
 [Link to deployed application](https://millerchase.github.io/portfolio/)
 
-## Mad With:
+## Made With:
 
 - HTML
 - CSS
